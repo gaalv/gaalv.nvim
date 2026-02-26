@@ -11,8 +11,8 @@ function M.load()
   vim.o.termguicolors = true
   vim.g.colors_name = "gaalv"
 
-  local palette = require("gaalv.palette")
-  local highlights = require("gaalv.highlights")
+  local palette = require("gaalv_nvim.palette")
+  local highlights = require("gaalv_nvim.highlights")
   highlights.setup(palette.colors)
 end
 

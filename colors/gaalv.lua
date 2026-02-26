@@ -1,1 +1,1 @@
-require("gaalv").load()
+require("gaalv_nvim").load()
