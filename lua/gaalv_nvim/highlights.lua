@@ -31,8 +31,8 @@ function M.setup(c)
   hl(0, "TermCursor",      { fg = c.void,    bg = c.violet })
 
   -- ── Selection / Search ────────────────────────────────────────────
-  hl(0, "Visual",          { bg = "#8b5cf630" })
-  hl(0, "VisualNOS",       { bg = "#8b5cf620" })
+  hl(0, "Visual",          { bg = "#21193b" })
+  hl(0, "VisualNOS",       { bg = "#18142d" })
   hl(0, "Search",          { fg = c.void,    bg = c.amber })
   hl(0, "IncSearch",       { fg = c.void,    bg = c.violet })
   hl(0, "CurSearch",       { fg = c.void,    bg = c.violet })
@@ -49,11 +49,11 @@ function M.setup(c)
 
   -- ── Pmenu ─────────────────────────────────────────────────────────
   hl(0, "Pmenu",           { fg = c.fg,      bg = c.surface })
-  hl(0, "PmenuSel",        { fg = c.fg,      bg = "#8b5cf628", bold = true })
+  hl(0, "PmenuSel",        { fg = c.fg,      bg = "#1d1734", bold = true })
   hl(0, "PmenuSbar",       { bg = c.surface })
   hl(0, "PmenuThumb",      { bg = c.muted })
   hl(0, "PmenuKind",       { fg = c.violet2, bg = c.surface })
-  hl(0, "PmenuKindSel",    { fg = c.violet,  bg = "#8b5cf628" })
+  hl(0, "PmenuKindSel",    { fg = c.violet,  bg = "#1d1734" })
   hl(0, "PmenuExtra",      { fg = c.comment, bg = c.surface })
 
   -- ── Messages ──────────────────────────────────────────────────────
@@ -64,10 +64,10 @@ function M.setup(c)
   hl(0, "ErrorMsg",        { fg = c.red })
 
   -- ── Diff ──────────────────────────────────────────────────────────
-  hl(0, "DiffAdd",         { fg = c.none,    bg = "#34d39918" })
-  hl(0, "DiffChange",      { fg = c.none,    bg = "#fbbf2418" })
-  hl(0, "DiffDelete",      { fg = c.none,    bg = "#f8717118" })
-  hl(0, "DiffText",        { fg = c.none,    bg = "#fbbf2430" })
+  hl(0, "DiffAdd",         { fg = c.none,    bg = "#0c1d1d" })
+  hl(0, "DiffChange",      { fg = c.none,    bg = "#1f1b12" })
+  hl(0, "DiffDelete",      { fg = c.none,    bg = "#1f1419" })
+  hl(0, "DiffText",        { fg = c.none,    bg = "#362c14" })
   hl(0, "Added",           { fg = c.green })
   hl(0, "Changed",         { fg = c.amber })
   hl(0, "Removed",         { fg = c.red })
@@ -180,15 +180,15 @@ function M.setup(c)
   hl(0, "DiagnosticUnderlineWarn",    { undercurl = true, sp = c.amber })
   hl(0, "DiagnosticUnderlineInfo",    { undercurl = true, sp = c.cyan })
   hl(0, "DiagnosticUnderlineHint",    { undercurl = true, sp = c.green })
-  hl(0, "DiagnosticVirtualTextError", { fg = c.red,   bg = "#f8717118", italic = true })
-  hl(0, "DiagnosticVirtualTextWarn",  { fg = c.amber, bg = "#fbbf2418", italic = true })
-  hl(0, "DiagnosticVirtualTextInfo",  { fg = c.cyan,  bg = "#22d3ee18", italic = true })
-  hl(0, "DiagnosticVirtualTextHint",  { fg = c.green, bg = "#34d39918", italic = true })
+  hl(0, "DiagnosticVirtualTextError", { fg = c.red,   bg = "#1f1419", italic = true })
+  hl(0, "DiagnosticVirtualTextWarn",  { fg = c.amber, bg = "#1f1b12", italic = true })
+  hl(0, "DiagnosticVirtualTextInfo",  { fg = c.cyan,  bg = "#0a1d25", italic = true })
+  hl(0, "DiagnosticVirtualTextHint",  { fg = c.green, bg = "#0c1d1d", italic = true })
 
   -- ── LSP References ────────────────────────────────────────────────
-  hl(0, "LspReferenceText",  { bg = "#8b5cf620" })
-  hl(0, "LspReferenceRead",  { bg = "#8b5cf620" })
-  hl(0, "LspReferenceWrite", { bg = "#8b5cf630" })
+  hl(0, "LspReferenceText",  { bg = "#18142d" })
+  hl(0, "LspReferenceRead",  { bg = "#18142d" })
+  hl(0, "LspReferenceWrite", { bg = "#21193b" })
   hl(0, "LspSignatureActiveParameter", { fg = c.violet, bold = true })
   hl(0, "LspInlayHint",      { fg = c.comment, bg = c.surface, italic = true })
 
@@ -196,9 +196,9 @@ function M.setup(c)
   hl(0, "GitSignsAdd",           { fg = c.green })
   hl(0, "GitSignsChange",        { fg = c.amber })
   hl(0, "GitSignsDelete",        { fg = c.red })
-  hl(0, "GitSignsAddLn",         { bg = "#34d39910" })
-  hl(0, "GitSignsChangeLn",      { bg = "#fbbf2410" })
-  hl(0, "GitSignsDeleteLn",      { bg = "#f8717110" })
+  hl(0, "GitSignsAddLn",         { bg = "#0b1719" })
+  hl(0, "GitSignsChangeLn",      { bg = "#171511" })
+  hl(0, "GitSignsDeleteLn",      { bg = "#171016" })
 
   -- ── Telescope ─────────────────────────────────────────────────────
   hl(0, "TelescopeNormal",       { fg = c.fg,      bg = c.surface })
@@ -211,7 +211,7 @@ function M.setup(c)
   hl(0, "TelescopeResultsTitle", { fg = c.comment })
   hl(0, "TelescopePreviewTitle", { fg = c.comment })
   hl(0, "TelescopeMatching",     { fg = c.violet,  bold = true })
-  hl(0, "TelescopeSelection",    { fg = c.fg,      bg = "#8b5cf628" })
+  hl(0, "TelescopeSelection",    { fg = c.fg,      bg = "#1d1734" })
 
   -- ── nvim-cmp ──────────────────────────────────────────────────────
   hl(0, "CmpItemAbbrMatch",        { fg = c.violet, bold = true })
@@ -260,7 +260,7 @@ function M.setup(c)
 
   -- ── Indent-blankline ──────────────────────────────────────────────
   hl(0, "IblIndent",    { fg = c.subtle })
-  hl(0, "IblScope",     { fg = "#8b5cf660" })
+  hl(0, "IblScope",     { fg = "#392967" })
 
   -- ── Lualine (base colors used by the config below) ───────────────
   -- See README for lualine config snippet.
